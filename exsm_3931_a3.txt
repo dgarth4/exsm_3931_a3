@@ -1,0 +1,56 @@
+HUNGRY CUSTOMER
+
+money = 5.00
+vending_machine_content = {chips 1.50, chocolate 2.00, gummy bears 2.50}
+vending_inventory = {chips 14, chocolate 20, gummy bears 10}
+change = 0
+choice = ""
+
+Look at choices and prices
+Select choice
+Insert money
+if choice is not available, or if choice inventory is zero {
+    error message asking the customer to pick a new option
+}
+Insert money
+while money is less than cost {
+    insert more money
+}
+Gears turn to dispense item
+Customer picks up item
+if money inserted is more than cost {
+    return change to customer
+}
+Update vending_inventory
+
+
+MACHINE OWNER
+
+vending_inventory = {chips 14, chocolate 20, gummy bears 10}
+total change available for customer = 20.50 [5 twonies, 8 loonies, 10 quarters]
+coin storage = 54.00 total earnings since last opening
+
+Unlock and open vending_machine with key
+
+Restock vending machine to maximum capacity {
+    Insert chips = 50 maximum
+    Insert chocolate = 25 maximum
+    Insert gummy bears = 25 maximum
+}
+If inventory of item insufficient {
+    then replace with item of higher inventory
+}
+
+Ensure normal operation of all vending_machine moving parts
+if any mechanical failures present {
+    then advise machine owner vedning_machine maintenance is required
+}
+
+Reset vending_inventory to 'full' for all items stocked
+
+Empty coin storage
+
+Fill change dispenser as required
+
+Close and lock vending_machine with key
+
